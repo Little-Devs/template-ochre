@@ -1,0 +1,29 @@
+---
+import { site } from '../data/site';
+const { hero } = site;
+---
+<section class="hero-band" id="top">
+  <div class="wrap hero">
+    <div>
+      <p class="kicker">{hero.kicker}</p>
+      <h1>{hero.title}</h1>
+      <p class="hero-lead">{hero.lead}</p>
+      <div class="actions">
+        <a class="btn" href={hero.primaryCta.href}>{hero.primaryCta.label}</a>
+        <a class="btn btn-ghost" href={hero.secondaryCta.href}>{hero.secondaryCta.label}</a>
+      </div>
+      <div class="stats">
+        {hero.posture.map((stat) => (
+          <div class="stat"><b>{stat.value}</b><span>{stat.label}</span></div>
+        ))}
+      </div>
+    </div>
+    <aside class="console" aria-hidden="true">
+      <header><span>desk.perth</span><span>staffed</span></header>
+      <div>operations</div><div class="bar"><i style="width:72%"></i></div>
+      <div>security pack</div><div class="bar"><i style="width:54%"></i></div>
+      <div>private models</div><div class="bar"><i style="width:38%"></i></div>
+      <div>monthly report · ready</div>
+    </aside>
+  </div>
+</section>

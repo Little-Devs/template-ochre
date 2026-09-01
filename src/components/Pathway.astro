@@ -1,0 +1,19 @@
+---
+import { site } from '../data/site';
+const { pathway } = site;
+---
+<section class="wrap section" id="pathway">
+  <div class="section-head">
+    <p class="kicker">{pathway.kicker}</p>
+    <h2>{pathway.title}</h2>
+  </div>
+  <div class="quotes">
+    {pathway.steps.map((s) => (
+      <blockquote class="quote">
+        <p class="kicker">{s.stage}</p>
+        <h3>{s.name}</h3>
+        <p>{s.note}</p>
+      </blockquote>
+    ))}
+  </div>
+</section>
