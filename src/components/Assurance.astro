@@ -1,0 +1,18 @@
+---
+import { site } from '../data/site';
+const { assurance } = site;
+---
+<section class="wrap section" id="assurance">
+  <div class="section-head">
+    <p class="kicker">{assurance.kicker}</p>
+    <h2>{assurance.title}</h2>
+  </div>
+  <table class="ledger">
+    <thead><tr><th>Item</th><th>State</th><th>Note</th></tr></thead>
+    <tbody>
+      {assurance.items.map((row) => (
+        <tr><td>{row.item}</td><td>{row.state}</td><td>{row.detail}</td></tr>
+      ))}
+    </tbody>
+  </table>
+</section>

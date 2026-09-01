@@ -1,0 +1,19 @@
+---
+import { site } from '../data/site';
+const { contact, logo } = site;
+---
+<section class="wrap section" id="contact">
+  <div class="contact">
+    <div>
+      <p class="kicker">Contact</p>
+      <h2>A scoping call is forty-five minutes. We say whether it is our work.</h2>
+      <p>Lorem ipsum. What you run, what you have to comply with, and who is asking.</p>
+      <address class="address">{logo.text}<br />{contact.address}<br />{contact.phone}</address>
+      <a class="btn" href={`mailto:${contact.email}?subject=Ochre%20Signal%20scoping`}>{contact.email}</a>
+    </div>
+    <div>
+      <p class="kicker">Note</p>
+      <p>Demo copy. Source firm names have been removed. Recurring managed service is the product.</p>
+    </div>
+  </div>
+</section>
