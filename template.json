@@ -1,0 +1,85 @@
+{
+  "id": "ochre",
+  "name": "Ochre Signal",
+  "description": "Australian-owned cyber and managed services landing. Dark ground, Pilbara ochre signal. Light-custom: logo, colours, fonts, copy, and section on/off. Demo copy is generic.",
+  "category": "landing-page",
+  "subcategory": "cyber",
+  "repository": "https://github.com/Little-Devs/template-ochre",
+  "demoUrl": "https://ochre.little.website/",
+  "previewImage": "",
+  "techStack": {
+    "framework": "Astro",
+    "version": "5.17.1",
+    "styling": "CSS variables",
+    "scripting": "TypeScript",
+    "buildTool": "Vite"
+  },
+  "features": [
+    "Australian-owned cyber and managed services landing",
+    "Light-custom: logo, colours, fonts, and copy",
+    "Section on/off for hero, capability, services, pathway, assurance, and contact",
+    "Dark ground with Pilbara ochre signal",
+    "Generic demo copy",
+    "Fully responsive Astro SSG"
+  ],
+  "aesthetic": {
+    "style": "Sovereign MSP",
+    "description": "Australian-owned cyber and managed services landing",
+    "fonts": {
+      "display": "Public Sans",
+      "ui": "Public Sans",
+      "sans": "Public Sans",
+      "primary": "Public Sans"
+    },
+    "colors": {
+      "primary": "#1a1410",
+      "primaryName": "Ground",
+      "accent": "#c45c26",
+      "accentName": "Pilbara ochre",
+      "background": "#f4ebe0",
+      "backgroundName": "Paper",
+      "ground": "#1a1410",
+      "ochre": "#c45c26",
+      "paper": "#f4ebe0",
+      "dust": "#8a7464"
+    }
+  },
+  "sections": [
+    "Hero",
+    "Capability",
+    "Services",
+    "Pathway",
+    "Assurance",
+    "Contact"
+  ],
+  "useCases": [
+    "Managed security providers",
+    "Cyber consultancies",
+    "Sovereign MSPs",
+    "Regional security firms"
+  ],
+  "customization": {
+    "difficulty": "easy",
+    "colorScheme": "CSS variables",
+    "typography": "Google Fonts (Public Sans)",
+    "layout": "CSS Grid + Flexbox"
+  },
+  "performance": {
+    "framework": "Astro (SSG)",
+    "cssOnly": "Most animations",
+    "lighthouse": "90+"
+  },
+  "license": "MIT",
+  "author": "Little-Devs",
+  "createdAt": "2026-09-01",
+  "lastUpdated": "2026-09-01",
+  "tags": [
+    "landing-page",
+    "cyber",
+    "msp",
+    "security",
+    "astro",
+    "ssg"
+  ],
+  "version": "1.0.0"
+}

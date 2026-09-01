@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+import Capability from '../components/Capability.astro';
+import Services from '../components/Services.astro';
+import Pathway from '../components/Pathway.astro';
+import Assurance from '../components/Assurance.astro';
+import Contact from '../components/Contact.astro';
+import { site } from '../data/site';
+---
+<BaseLayout>
+  <Header />
+  <main id="main">
+    {site.sections.hero && <Hero />}
+    {site.sections.capability && <Capability />}
+    {site.sections.services && <Services />}
+    {site.sections.pathway && <Pathway />}
+    {site.sections.assurance && <Assurance />}
+    {site.sections.contact && <Contact />}
+  </main>
+  <Footer />
+</BaseLayout>
